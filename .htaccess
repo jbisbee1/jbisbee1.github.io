@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404   https://www.clients.cbwd.org/jhb/404.php
