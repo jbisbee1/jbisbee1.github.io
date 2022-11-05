@@ -193,11 +193,31 @@ body {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	z-index: 2;
+
+	display: none;
 	p {
-		font-size: 5rem !important;
+		font-size: 4.5rem !important;
+		position: relative;
+		padding-left: 4rem;
 	}
 	.asterisk {
-		font-family: $font-serif;
+		font-family: "Times", serif;
+		font-size: 10rem;
+		position: absolute;
+		left: -2.5rem;
+		top: -2.7rem;
+		transform: rotate(0deg);
+		@keyframes asteriskRotate {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);	
+			}
+		}
+		animation: asteriskRotate .5s infinite linear;
+
 	}
 }
 
@@ -211,12 +231,6 @@ body {
 	border-radius: 40px;
 	overflow: hidden;
 
-	max-height: 4.4em;
-	width: 3em;
-	position: relative;
-	//transform: translateY(-50%);
-
-	//animation: pageLoad .4s ease 1s forwards;
 
 
 	ul, ol {
