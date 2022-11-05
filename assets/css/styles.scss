@@ -49,7 +49,7 @@ $font-serif: 'Merriweather', serif;
 	}
 }
 
-.mobile-hide, .cms-only {
+.mobile-hide {
 	display: none;
 }
 
@@ -170,56 +170,6 @@ body {
 	}
 }
 
-@keyframes pageLoad {
-	0% {
-		width: 3em;
-		max-height: 4.4em;
-	}
-	100% {
-		width: 100%;
-		max-height: 100%;
-
-	}
-}
-
-.page-loader {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: $primary;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	z-index: 2;
-
-	display: none;
-	p {
-		font-size: 4.5rem !important;
-		position: relative;
-		padding-left: 4rem;
-	}
-	.asterisk {
-		font-family: "Times", serif;
-		font-size: 10rem;
-		position: absolute;
-		left: -2.5rem;
-		top: -2.7rem;
-		transform: rotate(0deg);
-		@keyframes asteriskRotate {
-			0% {
-				transform: rotate(0deg);
-			}
-			100% {
-				transform: rotate(360deg);	
-			}
-		}
-		animation: asteriskRotate .5s infinite linear;
-
-	}
-}
 
 .content {
 	font-family: $font-ss;
@@ -230,7 +180,6 @@ body {
 	color: #222;
 	border-radius: 40px;
 	overflow: hidden;
-
 
 
 	ul, ol {
@@ -1053,66 +1002,3 @@ main .tab {
 	}
 }
 
-
-
-
-.is-cms {
-	.overlay, .card-wrap-grid .grid-card .abstract-toggle-button, .card-wrap-grid .close-x, .shape, .content .btn-icon {
-		display: none !important;
-	}
-	.cms-only {
-		display: block;
-		background: lightblue;
-		border: 1px dashed red;
-	}
-	.popup {
-		background: #eee;
-		width: auto;
-		position: static;
-		transform: none;
-		visibility: visible !important;
-		opacity: 1 !important;
-
-	}
-	.card-wrap-grid .grid-row {
-		flex-direction: column;
-		height: auto !important;
-		margin-bottom: 5em;
-		.row-category {
-			width: 100%;
-			margin: 0 0 1em;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-		.grid-card {
-			height: 20em !important;
-			width: 100%;
-			flex-grow: 1;
-			border-radius: 40px 40px 0 0;
-			filter: none;
-			.grid-card-front-text {
-				height: 90%;
-				opacity: 1;
-				visibility: visible;
-				border-top: 1px dashed red;
-			}
-		}
-		&:nth-of-type(even) {
-			background: #ccc;
-		}
-	}
-	.card-wrap-grid .abstract {
-		width: 100%;
-		position: static;
-		transform: none;
-		border: 2px solid $primary;
-		border-top: none;
-		margin-bottom: 1em;
-		opacity: 1;
-		visibility: visible;
-	}
-
-	.page-title {
-		display: block;
-	}
-}

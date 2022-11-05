@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ZC29XHD9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-B6ZC29XHD9');
+	</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>James Bisbee - Code</title>
+	<meta name="description" content="James Bisbee code for various projects.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
@@ -27,42 +37,13 @@
 
 
 		<div class="content">
-			<header class="header flex cms-include" id="the-header">
-				<p>
-					<a href="index.html" class="logo-wrap font-serif">
-						<span class="logo-asterisk">*</span>James Bisbee</a>
-					</a>
-				</p>
-				<nav class="main-nav">
-					<ul class="flex cms-editable" id="thenav">
-						<li class="cms-repeatable">
-							<a href="index.html">About Me</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="research.html">Research</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="teaching.html">Teaching</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="code.html">Code</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="hamburger mobile-hide" onclick="this.classList.toggle('active')">
-					<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80">
-					  	<path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-					  	<path class="line middle" d="m 30,50 h 40" />
-					  	<path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-					</svg>
-				</button>
-			</header>
+			<?php include 'templates/header.php';?>
 			<main>
 				<section class="tab-code tab">
-					<h2 class="page-title mobile-hide cms-editable" id="page-title-2">Code</h2>
+					<h2 class="page-title mobile-hide">Code</h2>
 					<div class="tab-content">
-						<div class="masonry-grid cms-editable" id="masonry-grid">
-							<div class="grid-item cms-repeatable">
+						<div class="masonry-grid">
+							<div class="grid-item">
 								<div class="img-wrap">
 									<img src="assets/img/polisci-twitter.webp" alt="Polisci Twitter">
 								</div>
@@ -72,7 +53,7 @@
 									<p><a href="https://github.com/jbisbee1/BARP" target="_blank">Source code <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
 								</div>
 							</div>
-							<div class="grid-item cms-repeatable">
+							<div class="grid-item">
 								<div class="img-wrap">
 									<img src="assets/img/echo-chamber-static-ideology.webp" alt="Polisci Twitter">
 								</div>
@@ -82,7 +63,7 @@
 									<p><a href="https://github.com/jbisbee1/QualtricsCreatoR" target="_blank">Source code <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
 								</div>
 							</div>
-							<div class="grid-item cms-repeatable">
+							<div class="grid-item">
 								<div class="img-wrap">
 									<img src="assets/img/covid-paper.webp" alt="Polisci Twitter">
 								</div>
@@ -92,7 +73,7 @@
 									<p><a href="https://github.com/jbisbee1/dyadRobust" target="_blank">Source code <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
 								</div>
 							</div>
-							<div class="grid-item cms-repeatable">
+							<div class="grid-item">
 								<div class="img-wrap">
 									<img src="assets/img/covid-paper.webp" alt="Polisci Twitter">
 								</div>
@@ -110,26 +91,7 @@
 
 				</section>
 			</main>
-			<footer class="footer flex cms-include" id="the-footer">
-				<ul class="social-icons cms-editable" id="soc-icons">
-					<li class="cms-repeatable">
-						<a href="https://github.com/jbisbee1" target="_blank">
-							<i class="fa fa-github" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="cms-repeatable">
-						<a href="https://twitter.com/JamesBisbee" target="_blank">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="cms-repeatable">
-						<a href="mailto:james.h.bisbee@vanderbilt.edu" target="_blank">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-				<p>website by <a href="https://cbwd.org" target="_blank">cbwd</a>.</p>
-			</footer>
+			<?php include 'templates/footer.php';?>
 		</div>
 	</div>
 

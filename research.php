@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ZC29XHD9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-B6ZC29XHD9');
+	</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>James Bisbee - Research</title>
+	<meta name="description" content="James Bisbee's notable research projects to date with abstracts'.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
@@ -27,58 +37,25 @@
 
 
 		<div class="content">
-			<header class="header flex cms-include" id="the-header">
-				<p>
-					<a href="index.html" class="logo-wrap font-serif">
-						<span class="logo-asterisk">*</span>James Bisbee</a>
-					</a>
-				</p>
-				<nav class="main-nav">
-					<ul class="flex cms-editable" id="thenav">
-						<li class="cms-repeatable">
-							<a href="index.html">About Me</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="research.html">Research</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="teaching.html">Teaching</a>
-						</li>
-						<li class="cms-repeatable">
-							<a href="code.html">Code</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="hamburger mobile-hide" onclick="this.classList.toggle('active')">
-					<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80">
-					  	<path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-					  	<path class="line middle" d="m 30,50 h 40" />
-					  	<path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-					</svg>
-				</button>
-			</header>
+			<?php include 'templates/header.php';?>
 			<main>
 				<section class="tab-research tab">
-					<h2 class="page-title mobile-hide cms-editable" id="page-title-3">Research</h2>
+					<h2 class="page-title mobile-hide">Research</h2>
 					<div class="tab-content">
-						<div class="cms-only">
-							<p>To change flex card photo double click on top part of photo above dashed red line.</p>
-							<p>To add new flex card place cursor after row category title and then use arrow keys to place cursor where you would like new flex card to appear. Then click "+", "Blocks", "Flex Card". Edit accordingly.</p>
-						</div>
 						
-						<div class="card-wrap-grid cms-editable" id="grid-wrap">
+						<div class="card-wrap-grid">
 
 							<!-- row 1 -->
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">Social Media and Politics</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>Social Media and Politics</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/polisci-twitter.webp" alt="Polisci Twitter">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/polisci-twitter.webp" alt="Polisci Twitter">
+									<div class="grid-card-front-text hidden">
 										<h3>A Descriptive Analysis of how Political Scientists Use Twitter in 2019</h3> 
 										<div class="co-authors">
 											<p>with Jennifer M. Larson and Kevin Munger (2020) <em>Perspectives on Politics</em></p>
@@ -106,9 +83,9 @@
 
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/echo-chamber-static-ideology.webp" alt="Echo chamber static ideology">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/echo-chamber-static-ideology.webp" alt="Echo chamber static ideology">
+									<div class="grid-card-front-text hidden">
 										<h3>Supply-Side Polarization: How YouTube's Recommendation Algorithm Pushes Real People Content</h3> 
 										<div class="co-authors">
 											<p>with Megan A. Brown, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2021) <em>KDI Symposium on Polarization in South Korea and the United States</em></p>
@@ -134,9 +111,9 @@
 
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/covid-paper.webp" alt="Covid Paper">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/covid-paper.webp" alt="Covid Paper">
+									<div class="grid-card-front-text hidden">
 										<h3>The Polarization of Covid-19 in the American Public</h3> 
 										<div class="co-authors">
 											<p>with Haohan Chen, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2021) <em>Working Paper</em></p>
@@ -159,9 +136,9 @@
 
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/fraud-recommendations.webp" alt="Fraud Recommendations">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/fraud-recommendations.webp" alt="Fraud Recommendations">
+									<div class="grid-card-front-text hidden">
 										<h3>Election Fraud, YouTube, and Public Perception of the Legitimacy of President Biden</h3> 
 										<div class="co-authors">
 											<p>with Megan A. Brown, Angela Lai, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022) <em>Journal of Online Trust and Safety</em></p>
@@ -189,16 +166,16 @@
 							</div>
 
 
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">Trade and American Politics</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>Trade and American Politics</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/trade-causal.webp" alt="Trade Causal">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/trade-causal.webp" alt="Trade Causal">
+									<div class="grid-card-front-text hidden">
 										<h3>The China Shock for Political Science: Describing the Limits of Causal Identification</h3> 
 										<div class="co-authors">
 											<p>(2021) <em>Working Paper</em></p>
@@ -221,9 +198,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Shocking the Vulnerable: Job Insecurity and Anti-Globalization Sentiment</h3> 
 										<div class="co-authors">
 											<p>with B. Peter Rosendorff (2022) <em>R&R at AJPS</em></p>
@@ -249,9 +226,9 @@
 
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/jmp-1.webp" alt="What You See Out Your Back Door: How Political Beliefs Respond to Local Trade Shocks">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/jmp-1.webp" alt="What You See Out Your Back Door: How Political Beliefs Respond to Local Trade Shocks">
+									<div class="grid-card-front-text hidden">
 										<h3>What You See Out Your Back Door: How Political Beliefs Respond to Local Trade Shocks</h3> 
 										<div class="co-authors">
 											<p>(2019) <em>Job Market Paper</em></p>
@@ -276,9 +253,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Responsive Politicians: Local Trade Shocks and Congressional Support for Free Trade</h3> 
 										<div class="co-authors">
 											<p>(2017) <em>Working Paper</em></p>
@@ -301,9 +278,9 @@
 
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Trade and Crime: Connecting Trade-Related Layoffs with Criminal Activity</h3> 
 										<div class="co-authors">
 											<p>(2017) <em>Working Paper</em></p>
@@ -326,16 +303,16 @@
 							</div>
 
 							<!-- row 3 -->
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">Public Opinion & Political Behavior</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>Public Opinion & Political Behavior</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/covid-jop.webp" alt="Objective Facts and Elite Cues: Partisan Responses to Covid-19">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/covid-jop.webp" alt="Objective Facts and Elite Cues: Partisan Responses to Covid-19">
+									<div class="grid-card-front-text hidden">
 										<h3>Objective Facts and Elite Cues: Partisan Responses to Covid-19</h3> 
 										<div class="co-authors">
 											<p>with Da In Diana Lee (2021) <em>The Journal of Politics</em></p>
@@ -358,9 +335,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Flight to Safety: Covid-Induced Changes in the Intensity of Status Quo Preference and Voting Behavior</h3> 
 										<div class="co-authors">
 											<p>with Daniel Honig (2021) <em>The American Political Science Review</em></p>
@@ -386,16 +363,16 @@
 							</div>
 
 							<!-- row 4 -->
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">International Political Economy</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>International Political Economy</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>The Millennium Development Goals and Education: Accountability and Substitution in Global Assessment</h3> 
 										<div class="co-authors">
 											<p>with James R. Hollyer, James Raymond Vreeland, and Peter B. Rosendorff (2019) <em>International Organization</em></p>
@@ -418,9 +395,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Decompensating Domestically: The Political Economy of Anti-Globalism</h3> 
 										<div class="co-authors">
 											<p>with Layna Mosley, Tom Pepinsky, and B. Peter Rosendorff (2019) <em>Journal of European Public Policy</em></p>
@@ -446,16 +423,16 @@
 							</div>
 
 							<!-- row 5 -->
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">Political Methodology</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>Political Methodology</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Local Instruments, Global Extrapolation: External Validity of the Labor Supply-Fertility Local Average Treatment Effect</h3> 
 										<div class="co-authors">
 											<p>with Rajeev Dehejia, Cristian Pop-Eleches, and Cyrus Samii (2017) <em>Journal of Labor Economics</em></p>
@@ -478,9 +455,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Testing Social Science Network Theories with Online Network Data: An Evaluation of External Validity</h3> 
 										<div class="co-authors">
 											<p>with Jennifer M. Larson (2017) <em>American Political Science Review</em></p>
@@ -505,9 +482,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>BARP: Improving Mister P using Bayesian Additive Regression Trees</h3> 
 										<div class="co-authors">
 											<p>(2019) <em>American Political Science Review</em></p>
@@ -530,9 +507,9 @@
 								</div>
 
 
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Geographic Boundaries and Local Economic Conditions Matter for Views of the Economy</h3> 
 										<div class="co-authors">
 											<p>with Jan Zilinsky (2021) <em>Conditionally accepted at Political Analysis</em></p>
@@ -556,16 +533,16 @@
 							</div>
 
 							<!-- row 6 -->
-							<div class="grid-row" class="cms-repeatable">
-								<div class="row-category cms-lock">
-									<p class="cms-unlock">American Political Economy</p> 
+							<div class="grid-row">
+								<div class="row-category">
+									<p>American Political Economy</p> 
 									<button class="mobile-hide plus-switch">+</button>
 								</div>
 
 								<!-- Button -->
-								<div class="grid-card cms-lock">
-									<img class="cms-unlock" src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
-									<div class="grid-card-front-text hidden cms-unlock">
+								<div class="grid-card">
+									<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+									<div class="grid-card-front-text hidden">
 										<h3>Political Geography and Firm Strategies: How Electoral Competition Influences Local Job Creation</h3> 
 										<div class="co-authors">
 											<p>with Hye Young You (2021) <em>Working Paper</em></p>
@@ -595,26 +572,7 @@
 
 				</section>
 			</main>
-			<footer class="footer flex cms-include" id="the-footer">
-				<ul class="social-icons cms-editable" id="soc-icons">
-					<li class="cms-repeatable">
-						<a href="https://github.com/jbisbee1" target="_blank">
-							<i class="fa fa-github" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="cms-repeatable">
-						<a href="https://twitter.com/JamesBisbee" target="_blank">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="cms-repeatable">
-						<a href="mailto:james.h.bisbee@vanderbilt.edu" target="_blank">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-				<p>website by <a href="https://cbwd.org" target="_blank">cbwd</a>.</p>
-			</footer>
+			<?php include 'templates/footer.php';?>
 		</div>
 	</div>
 
