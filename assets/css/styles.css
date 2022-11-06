@@ -1085,6 +1085,7 @@ main .tab.tab-about .titles ul li {
 
   .abstract, .popup {
     width: 90%;
+    max-height: 90%;
     overflow-y: scroll;
   }
 
