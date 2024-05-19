@@ -1,0 +1,122 @@
+.header {
+	padding: 1em 0;
+
+	.logo-wrap {
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: #333 !important;
+
+		img {
+			width: 25px;
+			margin-right: 15px;
+			transform: rotate(0deg);
+			transition: 1s transform ease-in-out;
+		}
+		&:hover img {
+			transform: rotate(360deg);
+		}
+		
+	}
+
+	.main-nav {
+		ul {
+			gap: 2em;
+		}
+		li {
+			list-style: none;
+			padding: 0;
+			a {
+				color: #555;
+				position: relative;
+				display: inline-block;
+				padding: 5px;
+				outline: none !important;
+				&::before, &::after {
+					content: "";
+					position: absolute;
+					transition: transform .5s ease;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					border-style: solid;
+					border-color: $primary;
+				}	
+				&::before {
+					border-width: 2px 0 2px 0;
+  					transform: scaleX(0);
+				}
+				&::after {
+					border-width: 0 2px 0 2px;
+  					transform: scaleY(0);
+				}
+				&:hover::before, &:hover::after, &:focus::before, &:focus::after {
+					transform: scale(1, 1);
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.hamburger {
+		z-index: 2;
+		padding: 0;
+		margin: -1em -2em 0 0;
+		transform: scale(.7);
+		transition: .3s transform ease;
+
+		.ham {
+			-webkit-tap-highlight-color: transparent;
+			transition: transform 400ms;
+			user-select: none;
+			.line {
+				fill:none;
+			  	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+			  	stroke: #333;
+			  	stroke-width:5.5;
+			  	stroke-linecap:round;
+			  	&.top {
+			  		stroke-dasharray: 40 139;
+			  	}
+			  	&.bottom {
+			  		stroke-dasharray: 40 180;
+			  	}
+			}
+		}
+
+		&.active .ham {
+			transform: rotate(45deg);
+			.line {
+				&.top {
+					stroke-dashoffset: -98px;
+				}
+				&.bottom {
+					stroke-dashoffset: -138px;
+				}
+			}
+		}
+		
+	}
+	@media screen and (max-width: $break-mid) {
+		> div {
+			display: block;
+			>p {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+		}
+		.main-nav ul {
+			justify-content: center;
+			padding-left: 0;
+		}
+	}
+	@media screen and (max-width: $break-xsmall) {
+		.main-nav ul {
+			gap: .85em;
+			li {
+				font-size: 14px;
+			}
+		}
+	}
+}

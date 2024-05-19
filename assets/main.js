@@ -1,31 +1,51 @@
 $(document).ready(function() {
-	
-	$(".popup-btn").click(function() {
-		$(".overlay").addClass("reveal");
-		$(".popup").addClass("reveal");
-	});
 
 	$(".abstract-toggle-button").click(function() {
 		$(".overlay").addClass("reveal");
-		$(this).parents(".grid-card").next(".abstract").addClass("reveal");
+		$(".grid-card").removeClass("show-abstract");
+		$(this).parent(".grid-card").addClass("show-abstract");
+	});
+
+	$(".popup-btn").click(function() {
+		$(".overlay, .popup").addClass("reveal");
 	});
 
 	$(".close-x").click(function() {
-		$(".overlay, .abstract, .popup").removeClass("reveal");
+		$(".overlay, .popup").removeClass("reveal");
 	});
 
-	$(".overlay").click(function() {
-		$(".overlay, .abstract, .popup").removeClass("reveal");
-	});
+	$(".overlay, .close-x").click(function() {
+		$(this).removeClass("reveal");
+		$(".grid-card").removeClass("show-abstract");
+		$(".popup").removeClass("reveal");
+	});	
 
 
-	$(".hamburger").click(function() {
-		$(".header .main-nav").toggleClass("mobile-nav-show");
+	$(".category-selectors .btn").click(function() {
+		$(".category-selectors .btn").removeClass("active");
+		$(this).addClass("active");
 	});
 
-	$(".plus-switch").click(function() {
-		$(this).parents(".grid-row").toggleClass("grid-row-mobile-expand");
+	
+
+	$("#btn-published").click(function() {
+		$(".published-paper").addClass("emphasize");
+		$(".working-paper").removeClass("emphasize");
+	});	
+
+	$("#btn-working").click(function() {
+		$(".working-paper").addClass("emphasize");
+		$(".published-paper").removeClass("emphasize");
 	});
+
+	$(".grid-row").click(function() {
+		$(".grid-card").removeClass("emphasize");
+		$(".category-selectors .btn").removeClass("active");
+	});
+
+	
+	
+
 
 })
 

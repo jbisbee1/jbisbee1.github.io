@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ZC29XHD9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-B6ZC29XHD9');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>James Bisbee - Research</title>
+	<meta name="description" content="James Bisbee's notable research projects to date with abstracts'.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+	
+</head>
+
+<body class="research">
+	<div class="overlay"></div>
+
+
+	<div class="container">
+		<?php include 'templates/header.php';?>
+		<main class="main">
+			<section>
+				<h2 class="page-title d-none">Research</h2>
+				<div class="card-wrap-grid">
+
+					<div class="category-selectors">
+						<ul class="d-flex gap3">
+							<li>
+								<button class="btn" id="btn-published">
+									<span>Published</span>
+									<div class="btn-icon">
+										<i class="fa fa-book" aria-hidden="true"></i>
+									</div>
+								</button>
+							</li>
+							<li>
+								<button class="btn" id="btn-working">
+									<span>Working</span>
+									<div class="btn-icon">
+										<i class="fa fa-wrench" aria-hidden="true"></i>
+									</div>
+								</button>
+							</li>
+						</ul>
+
+						
+					</div>
+
+
+					<!-- row 1 -->
+					<div class="grid-row">
+						<div class="row-category">
+							<p>Social Media and Politics</p> 
+							<button class="d-none plus-switch">+</button>
+						</div>
+
+
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/polisci-twitter.webp" alt="Polisci Twitter">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>A Descriptive Analysis of how Political Scientists Use Twitter in 2019</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Jennifer M. Larson and Kevin Munger (2020)</p>
+									<p><em>Perspectives on Politics</em></p>
+									<p><strong>Abstract:</strong> Knowledge creation is a social enterprise, especially in political science. Sharing new findings widely and quickly is essential for progress. Scholars can now use Twitter to rapidly disseminate ideas, and many do. What are the implications of this new tool? Who uses it, how do they use it, and what are the implications for exacerbating or ameliorating existing inequalities in terms of research dissemination and attention? We construct a novel dataset of all 1,236 political science professors at PhD-granting institutions in the United States who have a Twitter account to answer these questions. We find that female scholars and those on the tenure track are more likely to use Twitter, especially for the dissemination of research. However, we consistently find that research by men shared on Twitter is more likely to be passed along further by men than research by women.</p>
+									<p>
+										<a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/polisci-twitter-a-descriptive-analysis-of-how-political-scientists-use-twitter-in-2019/C8A193C3E939C1ABCD4600DFE8AEF79A?utm_source=hootsuite&utm_medium=twitter&utm_campaign=PPS_Dec20" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/echo-chamber-static-ideology.webp" alt="Echo chamber static ideology">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Supply-Side Polarization: How YouTube's Recommendation Algorithm Pushes Real People Content</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Megan A. Brown, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2021)</p>
+									<p><em>KDI Symposium on Polarization in South Korea and the United States</em></p>
+									<p><strong>Abstract:</strong> To what extent does the YouTube recommendation algorithm push users toward more ideologically congruent content? Existing research on this question has relied on anonymous browsers paired with user-agnostic APIs, and has found very little evidence that the recommendation algorithms are to blame. We surveyed real YouTube users to navigate from a provided starting video and clicked on recommended videos according to a simple rule (i.e., always click the first video, second video, third video, etc.). We demonstrate that the YouTube recommendation algorithm does, in fact, push real users toward more ideologically congruent content by showing that Republican users are exposed to more conservative content than are Democratic users. Furthermore, we show that this difference is entirely due to the algorithm recommending more conservative content to Republicans than what would be shown due to statistical mean reversion. Our analysis provides an ecologically valid estimate of the degree to which recommendation algorithms influence the ideological content that the public consumes from the supply side.</p>
+									<p>
+										<a href="https://www.dropbox.com/s/kr0za0f0igj1bwc/youtube_polarization_chapter.pdf?e=1&dl=0" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+						<div class="grid-card published-paper">
+							<img src="assets/img/fraud-recommendations.webp" alt="Fraud Recommendations">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Election Fraud, YouTube, and Public Perception of the Legitimacy of President Biden</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Megan A. Brown, Angela Lai, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022)</p>
+									<p><em>Journal of Online Trust and Safety</em></p>
+									<p><strong>Abstract:</strong> Skepticism about the outcome of the 2020 presidential election in the United States led to a historic attack on the Capitol on January 6th, 2021 and represents one of the greatest challenges to America's democratic institutions in over a century. Narratives of fraud and conspiracy theories proliferated over the fall of 2020, finding fertile ground across online social networks, although little is know about the extent and drivers of this spread. In this letter, we show that users who were more skeptical of the election's legitimacy were more likely to be recommended content that featured narratives questioning the election's legitimacy. Our findings underscore the tension between an ''effective'' recommendation system that provides users with the content they want, and a dangerous mechanism by which misinformation, disinformation, and conspiracies can find their way to those most likely to believe them.</p>
+									<p>
+										<a href="https://tsjournal.org/index.html/jots/article/view/60/24" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+						<div class="grid-card published-paper">
+							<img src="assets/img/youtube-ideology.webp" alt="YouTube Ideology paper">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Estimating the Ideology of Political YouTube Videos</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Megan A. Brown, Angela Lai, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022)</p>
+									<p><em>R&R at Political Analysis</em></p>
+									<p><strong>Abstract:</strong> We present a method for estimating the ideology of political YouTube videos. As online media increasingly influences how people engage with politics, so does the importance of quantifying the ideology of such media for research. The subfield of estimating ideology as a latent variable has often focused on traditional actors such as legislators, while more recent work has used social media data to estimate the ideology of ordinary users, political elites, and media sources. We build on this work by developing a method to estimate the ideologies of YouTube videos, an important subset of media, based on their accompanying text metadata. First, we take Reddit posts linking to YouTube videos and use correspondence analysis to place those videos in an ideological space. We then train a text-based model with those estimated ideologies as training labels, enabling us to estimate the ideologies of videos not posted on Reddit. These predicted ideologies are then validated against human labels. Finally, we demonstrate the utility of this method by applying it to the watch histories of survey respondents with self-identified ideologies to evaluate the prevalence of echo chambers on YouTube. Our approach gives video-level scores based only on supplied text metadata, is scalable, and can be easily adjusted to account for changes in the ideological climate. This method could also be generalized to estimate the ideology of other items referenced or posted on Reddit.</p>
+									<p>
+										<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088828" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card working-paper">
+							<img src="assets/img/covid-paper.webp" alt="Covid Paper">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>The Polarization of Covid-19 in the American Public</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Haohan Chen, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022)</p>
+									<p><em>Working Paper</em></p>
+									<p><strong>Abstract:</strong> An open question in the field of American politics is the degree to which voters punish politicians for deviating from the voter’s preferred policies, or whether voters adjust their policy preferences to match those of their co-partisan elites. Convincingly answering this question has remained an elusive goal for political science research due to data availability. We resolve the debate using richly detailed panel data in which we observe the joint beliefs of the public, politicians, experts, and the media together over time in the context of the Covid-19 pandemic between January and December of 2020. We test whether the public reacts to policy pronouncements by politicians by updating their views of the seriousness of the pandemic, or by updating their views of the politicians themselves. We find that early in the pandemic, the public was more willing to update their views of the pandemic based on pronouncements by politicians. However, later in the pandemic, when voters had formed opinions on the issue, they were more likely to update attitudes of politicians when politicians endorsed or enacted policies they opposed.</p>
+									<!--<p>
+										<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088828" target="_blank">Read full article</a>
+									</p>-->
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card working-paper">
+							<img src="assets/img/covid-gap.webp" alt="Covid Gap Paper">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Punishing Politicians on the basis of Covid-19</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Haohan Chen, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022)</p>
+									<p><em>Working Paper</em></p>
+									<p><strong>Abstract:</strong> The political polarization over the Covid-19 pandemic challenges existing theoretical expectations about where and when we should observe evidence of partisan motivated reasoning (PMR). Put simply, voters should adhere to democratic norms of accountability by punishing politicians who deviate from their preferred policies when (1) those policies are highly salient, (2) where the parties have not clearly differentiated themselves, and (3) where the information environment is rich. Covid-19, particularly in the beginning of the pandemic, adhered to all three of these dimensions, yet there is a growing consensus in the literature that it is a political issue. We push back on this conclusion by demonstrating that there is important over-time variation in the strength of democratic accountability which is consistent with the scope conditions of where and when we should expect to observe more or less partisan motivated reasoning. Specifically, we show that voters were more likely to disapprove of their governors' performance on Covid-19 when their governor diverged from the level of concern of their constituents, that these patterns were stronger toward the beginning of the pandemic, that these patterns were exacerbated by spikes in the change in weekly, and that the predictive power of the ``concern gap'' and objective facts declined as the predictive power of partisan congruence between voters and their governors increased. Far from being a uniquely polarizing pandemic, our results suggest that Covid-19 evolved according to the predictions of partisan motivated reasoning.</p>
+									<!--<p>
+										<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088828" target="_blank">Read full article</a>
+									</p>-->
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card working-paper">
+							<img src="assets/img/twitter-misinfo.webp" alt="Twitter Misinformation">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Identifying the Causal Effect of Twitter's Interventions on the Spread of Misinformation</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Swapneel Mehta, Richard Bonneau, Joshua A. Tucker, and Jonathan Nagler (2022)</p>
+									<p><em>Working Paper</em></p>
+									<p><strong>Abstract:</strong> We estimate the causal effect of interventions deployed by Twitter to limit the misinformation being shared by former President Donald J. Trump via his Twitter account in the months following the United States Presidential election on November 3, 2020 leading up to the Capitol riot on January 6, 2021. We study the multi-platform effects of Twitter's interventions considering the broader impact on audiences extending beyond Trump's following on a single social network. In particular, we employ a trajectory balancing approach for time-series cross-sectional data to estimate the causal effect of warning labels on the retweets and favorites received by a tweet posted on Twitter, and shared on Facebook, Reddit, and Instagram. We also estimate the causal effect of the restriction on sharing of tweets by Twitter on conversations referencing them posted on other platforms. Our findings reveal that warning labels cause a milder Streisand effect than previously estimated on Twitter. On the other hand these interventions seem to bring about a reduction in public conversations about it on other platforms while contributing to an increase in private conversations thereof.</p>
+									<!--<p>
+										<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4088828" target="_blank">Read full article</a>
+									</p>-->
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						
+
+
+
+
+						
+
+
+
+					</div>
+
+
+
+					<!-- row 2 -->
+					<div class="grid-row">
+						<div class="row-category">
+							<p>(I)PE</p> 
+							<button class="d-none plus-switch">+</button>
+						</div>
+
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/jmp-1.webp" alt="What You See Out Your Back Door: How Political Beliefs Respond to Local Trade Shocks">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>What You See Out Your Back Door: How Political Beliefs Respond to Local Trade Shocks</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>(2019)</p>
+									<p><em>Job Market Paper</em></p>
+									<p><strong>Abstract:</strong> What effect does trade have on American politics? Until recently, the answer to this question was "not much". Trade has been viewed as a low-salience issue since the 1970s -- its once-important status among the policy dimensions superseded by issues such as abortion, gay rights, and gun control. However, recent research and the election of Donald Trump has thrust trade back into the spotlight. In this paper, I document a causal relationship between localized trade shocks and individual policy preferences, highlighting the importance of sociotropic concerns at the local level. In addition, I show that policy preferences on free trade are bundled with opinions on immigrants and US global leadership, assembling to create a nativist response to trade-related economic shocks. These findings further our understanding of how free trade's unequal economic consequences explain variation in the political economy of trade.</p>
+									<p>
+										<a href="https://www.dropbox.com/s/nmfawzeunb1qpv5/bisbee_jmp_2019.pdf?e=1&dl=0" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/mdgs.webp" alt="MDGs">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>The Millennium Development Goals and Education: Accountability and Substitution in Global Assessment</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with James R. Hollyer, James Raymond Vreeland, and Peter B. Rosendorff (2019)</p>
+									<p><em>International Organization</em></p>
+									<p><strong>Abstract:</strong> Precise international metrics and assessments may induce governments to alter policies in pursuit of more favorable assessments according to these metrics. In this paper, we explore a secondary effect of global performance assessments (GPAs): Insofar as governments have finite resources and make trade-offs in public goods investments, a GPA that precisely targets the provision of a particular public good may cause governments to substitute away from the provision of other, related, public goods. We argue that both the main effect of the GPA (on the measured public good) and this substitution effect vary systematically based on the domestic political institutions and informational environments of targeted states. Specifically, we contend that both the main and substitution effects of GPAs should be largest for governments that are least accountable (opaque and non-democratic) and should be smallest for those that are most accountable. We test these claims using data on primary and secondary enrollment rates across 114 countries. We find that countries substitute toward primary (which is targeted by the MDGs) and away from secondary (which is not), and that these effects are mitigated as accountability rises.</p>
+									<p>
+										<a href="https://www.cambridge.org/core/journals/international-organization/article/abs/millennium-development-goals-and-education-accountability-and-substitution-in-global-assessment/A89DDA63A1ED0AEAF1498278FF97C695" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/decompensating.webp" alt="Decompensating">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Decompensating Domestically: The Political Economy of Anti-Globalism</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Layna Mosley, Tom Pepinsky, and B. Peter Rosendorff (2019)</p>
+									<p><em>Journal of European Public Policy</em></p>
+									<p><strong>Abstract:</strong> The rise of populism across advanced industrial countries presents a challenge to the institutions and norms that make up the current global order and threatens to undo the global system that has enabled decades of free trade and investment. We outline in this paper a domestic political economy account of the contemporary crisis of the global order, rooted in disenchantment with the redistributive bargain between globalization’s winners and losers. We present individual and local-level evidence that is consistent with this account, first documenting the decline of the embedded liberal compromise over the past 40 years in Europe, and then providing individual-level evidence from the United States of growing protectionism and xenophobia in response to import exposure, particularly among respondents whose occupational profile is most risk-exposed.</p>
+									<p>
+										<a href="https://www.tandfonline.com/doi/abs/10.1080/13501763.2019.1678662?journalCode=rjpp20" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card working-paper">
+							<img src="assets/img/trade-causal.webp" alt="Trade Causal">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>The China Shock for Political Science: Describing the Limits of Causal Identification</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>(2021)</p>
+									<p><em>Working Paper</em></p>
+									<p><strong>Abstract:</strong> Since it's initial rounds on the working paper circuits of 2010, <a href="https://www.nber.org/papers/w21906" target="_blank">Autor, Dorn and Hanson (2013)</a> has promised an unprecedented opportunity to assess important theories of economics, international political economy, and politics. Specifically, through a careful accounting that mapped changes in Chinese imports to commuting zone-level labor markets, combined with a two-period difference-in-differences strategy and an instrumental variable robustness check, the "China Shock" claimed to capture exogenous variation in import competition. Over the course of the ensuing decade, a cottage industry of empirical research flowered that used the China Shock to identify the causal effect of import competition on everything from crime to military enlistment. However, the speed of this proliferating research often meant that careful attention to the identifying assumptions required to transplant the China Shock to new empirical contexts was lacking. In this paper, I define the China Shock for political scientists, discussing the opportunities it provides for exciting new work and circumscribing the limits of its applicability. I propose an alternative implementation of the China Shock that more tightly focuses the source of identifying variation on the date of Chinese accession to the WTO and implements a generalized difference-in-differences specification to overcome several (but not all) of the threats to identification inherent in existing methods.</p>
+									<p>
+										<a href="https://www.dropbox.com/s/4x6w505nu0mnxer/bisbee_causality_and_the_china_shock_in_political_science.pdf?e=1&dl=0" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/shocking-vulnerable.webp" alt="Shocking the Vulnerable">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Anti-Globalization Sentiment: Exposure and Specificity</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with B. Peter Rosendorff (2021)</p>
+									<p><em>R&R at AJPS</em></p>
+									<p><strong>Abstract:</strong> While electoral effects of globalization are understood, individual level, survey-based evidence linking exposure to these same trade shocks and anti-globalization attitudes has remained elusive. We focus on labor market uncertainty -- individuals with heightened labor market insecurity express more protectionist, xenophobic and isolationist sentiment. We construct a novel measure of labor market uncertainty that combines an individual's industry-based exposure to import competition with an occupation-based measure of job immobility. Immobility captures the similarity of an individual's job to others in the economy. The holder of a job that is dissimilar to others in the industry or in the state may experience more anxiety in the face of a globalization shock, and is more likely to express anti-globalization sentiment.</p>
+									<p>
+										<a href="https://www.dropbox.com/s/545dksyqmpiilkc/bisbee_rosendorff_anti_globalism_USA%20V4.pdf?e=1&dl=0" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/subsidiaries.webp" alt="Subsidiaries">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Political Geography and Firm Strategies: How Electoral Competition Influences Local Job Creation</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Hye Young You (2022)</p>
+									<p><em>R&R at The Journal of Politics</em></p>
+									<p><strong>Abstract:</strong> Among the many promises made by politicians to their constituents, job creation is universal. Most jobs are created in the private sector and the jobs that firms provide are crucial to a politician’s ability to successfully deliver on their campaign promises. Do firms strategically use job creation to exert influence? We take this question to the universe of firms in the United States between 1997 and 2018, linking each subsidiary to a congressional district. We find that firms open subsidiaries in more competitive districts, suggesting that firms employ politicians’ constituents as a political strategy to build ties with vulnerable legislators. Unlike other tools of political influence available to a firm, such as campaign contributions and lobbying, job creation is constrained by geography and time. We show that these patterns exist only for firms in geographically flexible industries and that local job creation increases a politician’s electoral survival.</p>
+									<p>
+										<a href="https://www.dropbox.com/s/ptv1iaoyhkzg15b/manuscript_march_2021.pdf?e=1&dl=0" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+					</div>
+
+
+
+					<!-- row 3 -->
+					<div class="grid-row">
+						<div class="row-category">
+							<p>Public Opinion & Political Behavior</p> 
+							<button class="d-none plus-switch">+</button>
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/covid-jop.webp" alt="Objective Facts and Elite Cues: Partisan Responses to Covid-19">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Objective Facts and Elite Cues: Partisan Responses to Covid-19</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Da In Diana Lee (2021)</p>
+									<p><em>The Journal of Politics</em></p>
+									<p><strong>Abstract:</strong> American politics scholars disagree on the extent to which voters use policy information to evaluate politicians, versus relying on partisan cues to evaluate policies. We demonstrate the coexistence of both of these perspectives by studying the degree to which objective facts (measured with local Covid-19 cases) and partisan cues (measured with President Trump’s tweets about the virus) influence differences in the social distancing behaviors in Democrat and Republican counties in 2020. We find that both factors play an important role in social distancing, but that the relative importance between cues and facts favors the latter. Furthermore, the importance of these signals declines over time, suggesting a crucial but underappreciated dynamic of how partisan positions evolve in a Bayesian framework.</p>
+									<p>
+										<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/716969?journalCode=jop" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/bh-covid.webp" alt="Flight to Safety">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Flight to Safety: Covid-Induced Changes in the Intensity of Status Quo Preference and Voting Behavior</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Daniel Honig (2021)</p>
+									<p><em>The American Political Science Review</em></p>
+									<p><strong>Abstract:</strong> We posit that anxiety alters the intensity of voters’ preference for the status quo, inducing a “flight to safety” towards establishment candidates. Leveraging the outbreak of the novel coronavirus across space and time during the Democratic primary election of 2020, we identify a causal effect of the outbreak on voting, with Biden benefiting between 7 and 15 percentage points at Sanders’ expense. A survey experiment in which participants exposed to an anxiety-inducing prompt choose the less disruptive hypothetical candidate provides further evidence of our theorized flight to safety among US-based respondents. Evidence from 2020 French municipal & US House primary elections suggests a Covid-induced flight to safety benefits mainstream candidates across a range of settings. We conclude that anxiety stimulates voter preference for status quo preserving candidates – incumbents and non-incumbents alike.</p>
+									<p>
+										<a href="https://www.cambridge.org/core/journals/american-political-science-review/article/abs/flight-to-safety-covidinduced-changes-in-the-intensity-of-status-quo-preference-and-voting-behavior/AE84D93BAF8B27284DD8F6A75DE5D18A" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card working-paper">
+							<img src="assets/img/white-nationalism.webp" alt="White Nationalism">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>The Correlates of White Nationalism in 2021</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Patrick J. Egan and Joshua A. Tucker (2022)</p>
+									<p><em>Working Paper</em></p>
+									<p><strong>Abstract:</strong> In recent years, white nationalism has become a more visibly violent force in American public life, representing a grave threat to the foundations of our multiracial and multicultural democracy. In this paper, we present results from a first-ever survey measuring support for white nationalism, conducted in 2021 with a nationally representative sample of 3,225 non-Hispanic white U.S. adults. Using techniques designed to reduce measurement error and social desirability bias, we find that 6.7\% of white adults endorse a short statement explaining white nationalist beliefs. We examine the correlates of this support, finding that it is most pronounced among young (age 18-29) white men, whites with less education and lower incomes, and white conservatives and Republicans. We then provide descriptive evidence of three dominant theoretical frameworks for understanding radicalization: strain theory, structuralist theory, and social movement theory, finding that whites who live in places under societal stress--as indicated by high levels of poverty, unemployment, and deaths from substance use--are also more likely to support white nationalist ideas, as are whites who report more recent personal hardships. White nationalistic beliefs are also more prevalent among white people whose social worlds are largely online. But contrary to expectations, neither levels nor change in the share of local population that is white is associated with support for white nationalism.</p>
+									<!--<p>
+										<a href="https://www.cambridge.org/core/journals/american-political-science-review/article/abs/flight-to-safety-covidinduced-changes-in-the-intensity-of-status-quo-preference-and-voting-behavior/AE84D93BAF8B27284DD8F6A75DE5D18A" target="_blank">Read full article</a>
+									</p>-->
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+					</div>
+
+					<!-- row 4 -->
+					<div class="grid-row">
+						<div class="row-category">
+							<p>Political Methodology</p> 
+							<button class="d-none plus-switch">+</button>
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/glate.webp" alt="GLATE">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Local Instruments, Global Extrapolation: External Validity of the Labor Supply-Fertility Local Average Treatment Effect</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Rajeev Dehejia, Cristian Pop-Eleches, and Cyrus Samii (2017)</p>
+									<p><em>Journal of Labor Economics</em></p>
+									<p><strong>Abstract:</strong> We investigate the external validity of local average treatment effects (LATEs), specifically Angrist and Evans’ (1998) use of same sex of the two first children as an instrumental variable for the effect of fertility on labor supply. We estimate their specification in 139 country-year censuses using Integrated Public Use Micro Sample International data. We compare each country-year's actual LATE to the extrapolated LATE from other country-years. We find that, with a sufficiently large reference sample, we extrapolate the treatment effect reasonably well, but the degree of accuracy depends on the extent of covariate similarity between the target and reference settings.</p>
+									<p>
+										<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/691280" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/onlineoffline.webp" alt="Online Network Data">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Testing Social Science Network Theories with Online Network Data: An Evaluation of External Validity</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Jennifer M. Larson (2017)</p>
+									<p><em>American Political Science Review</em></p>
+									<p><strong>Abstract:</strong> To answer questions about the origins and outcomes of collective action, political scientists increasingly turn to datasets with social network information culled from online sources. However, a fundamental question of external validity remains untested: are the relationships measured between a person and her online peers informative of the kind of offline, "real-world" relationships to which network theories typically speak? This article offers the first direct comparison of the nature and consequences of online and offline social ties, using data collected via a novel network elicitation technique in an experimental setting. We document strong, robust similarity between online and offline relationships. This parity is not driven by shared identity of online and offline ties, but a shared nature of relationships in both domains. Our results affirm that online social tie data offer great promise for testing long-standing theories in the social sciences about the role of social networks.</p>
+									<p>
+										<a href="https://www.cambridge.org/core/journals/american-political-science-review/article/abs/testing-social-science-network-theories-with-online-network-data-an-evaluation-of-external-validity/4BF517F10F38DFB574FED4A3D805B613" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/barp.webp" alt="BARP">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>BARP: Improving Mister P using Bayesian Additive Regression Trees</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>(2019)</p>
+									<p><em>American Political Science Review Letters</em></p>
+									<p><strong>Abstract:</strong> Multilevel regression and post-stratification (MRP) is the current gold standard for extrapolating opinion data from nationally representative surveys to smaller geographic units. However, innovations in non-parametric machine learning methods can further improve the researcher's ability to extrapolate opinion data to a geographic unit of interest. I test an ensemble of machine learning algorithms and find that there is room for substantial improvement on the multilevel model via more sophisicated methods of regularization. I propose a modified version of MRP that replaces the multilevel model with a non-parametric approach called Bayesian Additive Regression Trees (BART or, when combined with post-stratification, BARP). I compare both methods across a number of data contexts, demonstrating the benefits of applying more powerful regularization methods to extrapolate opinion data to target geographical units. I provide an R package that implements the BARP method.</p>
+									<p><strong>Corrigendum:</strong> The replication materials contain a mistake that inaccurately inflated the errors associated with MRP, exaggerating the improvements associated with BARP. Correcting this error yields a more modest comparison, albeit one in which BARP still outperforms MRP, especially in smaller samples. The corrigendum is forthcoming and will be linked here when published.</p> 
+									<p>
+										<a href="https://www.cambridge.org/core/journals/american-political-science-review/article/abs/barp-improving-mister-p-using-bayesian-additive-regression-trees/630866EB47F9366EDB3C22CFD951BB6F" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+						<div class="grid-card published-paper">
+							<img src="assets/img/gallup.webp" alt="Geography">
+							<div class="grid-card-content">
+								<div class="title">
+									<h3>Geographic Boundaries and Local Economic Conditions Matter for Views of the Economy</h3>
+									<button class="close-x">x</button>
+								</div>
+								<div class="abstract">
+									<p>with Jan Zilinsky (2022)</p>
+									<p><em>Political Analysis</em></p>
+									<p><strong>Abstract:</strong> The link between objective facts and politically-relevant beliefs is an essential mechanism for democratic accountability. Yet the bulk of empirical work on this topic measures objective facts at whatever geographic units are readily available. In this letter, we investigate the implications of these largely arbitrary choices for predicting individual-level opinions. We show that varying the geographic resolution – namely aggregating economic data to different geographic units – influences the strength of the relationship between economic evaluations and local economic conditions. A systematic investigation of over 1.7 million subjective economic evaluations reveals that reliance on unemployment insurance is the best predictor of economic evaluations, especially when aggregated at the commuting zone or media market level. Our findings underscore the importance of researcher attention to a well-known but under-appreciated statistical challenge with observational data: the modifiable areal unit problem (MAUP). And our methods provide an example of how applied scholars might investigate these implications for their own research going forward.</p> 
+									<p>
+										<a href="https://www.cambridge.org/core/journals/political-analysis/article/abs/geographic-boundaries-and-local-economic-conditions-matter-for-views-of-the-economy/32C8C058B8E16CAD48374F95B2B1B3EF" target="_blank">Read full article</a>
+									</p>
+								</div>	 
+							</div>
+							<button class="abstract-toggle-button">Show abstract</button>
+							
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+
+
+			</section>
+		</main>
+		<?php include 'templates/footer.php';?>
+	</div>
+
+	<?php include 'templates/bg-animations.php';?>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+
+	
+
+</body>
+
+</html>

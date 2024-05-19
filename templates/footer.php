@@ -1,4 +1,4 @@
-<footer class="footer flex">
+<footer class="footer d-flex d-flex--justify">
 	<ul class="social-icons">
 		<li>
 			<a href="https://github.com/jbisbee1" target="_blank">
