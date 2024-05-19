@@ -28,7 +28,34 @@
 	
 
 	<div class="container">
-		<?php include 'templates/header.php';?>
+		<header class="header">
+
+			<div class="d-flex d-flex--justify">
+				<p>
+					<a href="index" class="logo-wrap font-serif">
+						<img src="assets/img/asterisk-small.webp" alt="Asterisk">
+						James Bisbee
+					</a>
+				</p>
+				<nav class="main-nav">
+					<ul class="d-flex">
+						<li>
+							<a href="index">About Me</a>
+						</li>
+						<li>
+							<a href="research">Research</a>
+						</li>
+						<li>
+							<a href="teaching">Teaching</a>
+						</li>
+						<li>
+							<a href="code">Code</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
 		<main class="main">
 			<section>
 				<h2 class="page-title d-none">Code</h2>
@@ -82,9 +109,40 @@
 
 			</section>
 		</main>
-		<?php include 'templates/footer.php';?>
+		<footer class="footer d-flex d-flex--justify">
+			<ul class="social-icons">
+				<li>
+					<a href="https://github.com/jbisbee1" target="_blank">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/JamesBisbee" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:james.h.bisbee@vanderbilt.edu" target="_blank">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<p>website by <a href="https://cbwd.org" target="_blank">cbwd</a>.</p>
+		</footer>
 	</div>
-	<?php include 'templates/bg-animations.php';?>
+	<div class="animations-wrap">
+		<img src="assets/img/asterisk-small.webp" alt="Asterisk" class="bg-shape bg-shape--asterisk">
+		<img src="assets/img/asterisk-small.webp" alt="Asterisk" class="bg-shape bg-shape--asterisk bg-shape--asterisk bg-shape--asterisk--small">
+		<img src="assets/img/asterisk-small.webp" alt="Asterisk" class="bg-shape bg-shape--asterisk bg-shape--asterisk bg-shape--asterisk--small bg-shape--asterisk--small--second">
+		<img src="assets/img/asterisk-small.webp" alt="Asterisk" class="bg-shape bg-shape--asterisk bg-shape--asterisk bg-shape--asterisk--small bg-shape--asterisk--small--third">
+		<div class="bg-shape bg-shape--square"></div>
+		<div class="bg-shape bg-shape--rectangle"></div>
+		<div class="bg-shape bg-shape--triangle"></div>
+		<div class="bg-shape bg-shape--line"></div>
+		<div class="bg-shape bg-shape--circle">
+			<img src="assets/img/asterisk-small.webp" alt="Asterisk" class="bg-shape bg-shape--asterisk">
+		</div>
+	</div>
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
