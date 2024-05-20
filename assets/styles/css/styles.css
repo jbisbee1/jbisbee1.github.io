@@ -742,7 +742,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
       flex-wrap: wrap;
   gap: 1em;
   border-bottom: 1px solid #eee;
-  padding: 2em 4em 2em 12em;
+  padding: 2em 8em 2em 12em;
   position: relative;
 }
 .card-wrap-grid .grid-row:last-of-type {
