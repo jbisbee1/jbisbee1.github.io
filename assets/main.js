@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-	$(".abstract-toggle-button").click(function() {
-		$(".overlay").addClass("reveal");
-		$(".grid-card").removeClass("show-abstract");
-		$(this).parent(".grid-card").addClass("show-abstract");
-	});
-
 	$(".popup-btn").click(function() {
 		$(".overlay, .popup").addClass("reveal");
 	});
@@ -14,18 +8,26 @@ $(document).ready(function() {
 		$(".overlay, .popup").removeClass("reveal");
 	});
 
-	$(".overlay, .close-x").click(function() {
-		$(this).removeClass("reveal");
-		$(".grid-card").removeClass("show-abstract");
-		$(".popup").removeClass("reveal");
-	});	
-
 
 	$(".category-selectors .btn").click(function() {
 		$(".category-selectors .btn").removeClass("active");
 		$(this).addClass("active");
-	});
+	});	
 
+	
+
+	$(".grid-button").click(function() {
+		$(".grid-button").removeClass("active");
+		$(".overlay").addClass("reveal");
+		$(".navigation-arrows").addClass("show");
+		$("body").addClass("body-freeze");
+	});
+	$(".overlay, .close-x").click(function() {
+		$(this).removeClass("reveal");
+		$(".grid-popup").removeClass("active");
+		$(".navigation-arrows").removeClass("show");
+		$("body").removeClass("body-freeze");
+	});
 	
 
 	$("#btn-published").click(function() {
@@ -39,7 +41,7 @@ $(document).ready(function() {
 	});
 
 	$(".grid-row").click(function() {
-		$(".grid-card").removeClass("emphasize");
+		$(".grid-button").removeClass("emphasize");
 		$(".category-selectors .btn").removeClass("active");
 	});
 
