@@ -47,7 +47,7 @@
   width: 100%;
   height: 100%;
   border-style: solid;
-  border-color: #ffc04d;
+  border-color: #CFAE70;
 }
 .header .main-nav li a::before {
   border-width: 2px 0 2px 0;
@@ -219,7 +219,7 @@
           box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
   position: relative;
   font-weight: 700;
-  color: #ffc04d;
+  color: #CFAE70;
   line-height: 28.8px;
 }
 .main a.btn span, .main .btn span, .main button.btn span {
@@ -227,7 +227,7 @@
   z-index: 1;
 }
 .main a.btn .btn-icon, .main .btn .btn-icon, .main button.btn .btn-icon {
-  background-color: #ffc04d;
+  background-color: #CFAE70;
   width: 92px;
   height: 100%;
   position: absolute;
@@ -269,7 +269,7 @@
 }
 @media screen and (max-width: 590px) {
   .main a.btn span, .main .btn span, .main button.btn span {
-    color: #ffc04d;
+    color: #CFAE70;
   }
   .main a.btn .btn-icon, .main .btn .btn-icon, .main button.btn .btn-icon {
     background-color: transparent;
@@ -280,13 +280,13 @@
     transition: none;
   }
   .main a.btn .btn-icon .fa, .main .btn .btn-icon .fa, .main button.btn .btn-icon .fa {
-    color: #ffc04d;
+    color: #CFAE70;
   }
   .main a.btn .btn-icon::after, .main .btn .btn-icon::after, .main button.btn .btn-icon::after {
     content: none;
   }
   .main a.btn:hover, .main a.btn:focus, .main a.btn.active, .main .btn:hover, .main .btn:focus, .main .btn.active, .main button.btn:hover, .main button.btn:focus, .main button.btn.active {
-    background: #ffc04d;
+    background: #CFAE70;
   }
   .main a.btn:hover span, .main a.btn:hover .btn-icon .fa, .main a.btn:focus span, .main a.btn:focus .btn-icon .fa, .main a.btn.active span, .main a.btn.active .btn-icon .fa, .main .btn:hover span, .main .btn:hover .btn-icon .fa, .main .btn:focus span, .main .btn:focus .btn-icon .fa, .main .btn.active span, .main .btn.active .btn-icon .fa, .main button.btn:hover span, .main button.btn:hover .btn-icon .fa, .main button.btn:focus span, .main button.btn:focus .btn-icon .fa, .main button.btn.active span, .main button.btn.active .btn-icon .fa {
     color: #fff;
@@ -322,7 +322,7 @@ img {
 }
 .close-x:focus {
   outline: -webkit-focus-ring-color auto 1px;
-  color: #000;
+  color: #1C1C1C;
   border-radius: 3px;
 }
 
@@ -358,7 +358,7 @@ body.home .main {
   }
 }
 .main a:hover, .main a:focus {
-  color: #ffc04d !important;
+  color: #CFAE70 !important;
 }
 .main ul, .main ol {
   list-style: none;
@@ -390,7 +390,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
 }
 
 .main a {
-  color: #ffc04d;
+  color: #CFAE70;
   position: relative;
   font-weight: 700;
 }
@@ -400,7 +400,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   width: 100%;
   height: 3px;
   border-radius: 3px;
-  background-color: #ffc04d;
+  background-color: #CFAE70;
   bottom: 0;
   left: 0;
   -webkit-transform-origin: right;
@@ -458,7 +458,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   position: absolute;
   width: 0.6em;
   height: 0.6em;
-  background: #ffc04d;
+  background: #CFAE70;
   left: -5px;
   top: 0;
   z-index: 1;
@@ -476,7 +476,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   color: #999;
 }
 .main .list-item .years-duration {
-  border: 2px solid #ffc04d;
+  border: 2px solid #CFAE70;
   padding: 3px 5px;
   border-radius: 15px;
   margin-right: 1em !important;
@@ -704,7 +704,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   left: -1.7em;
   top: 0.2em;
   font-size: 1.3rem;
-  color: #ffc04d;
+  color: #CFAE70;
 }
 .popup ul:first-of-type li:first-child .fa {
   font-size: 1.1rem;
@@ -738,8 +738,8 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 1px solid;
-  background: rgba(255, 192, 77, 0.5);
-  color: #000;
+  background: rgba(207, 174, 112, 0.5);
+  color: #1C1C1C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,7 +768,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   }
 }
 .navigation-arrows .arrow-button:hover, .navigation-arrows .arrow-button:focus {
-  background: #ffc04d;
+  background: #cfae70;
 }
 .navigation-arrows.show {
   display: -webkit-box;
@@ -839,10 +839,10 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   transition: 0.2s border ease;
 }
 .card-wrap-grid .grid-button.emphasize {
-  border-color: #ffc04d;
+  border-color: #CFAE70;
 }
 .card-wrap-grid .grid-button:focus-within {
-  outline: 2px solid #ffc04d;
+  outline: 2px solid #CFAE70;
 }
 .card-wrap-grid .grid-button img {
   position: absolute;
@@ -855,8 +855,8 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
 }
 .card-wrap-grid .grid-button .tooltip {
   position: absolute;
-  background: #000;
-  color: #ffc04d;
+  background: #1C1C1C;
+  color: #CFAE70;
   width: 350px;
   font-size: 0.8rem;
   text-align: left;
@@ -917,8 +917,9 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   overflow-y: hidden;
 }
 .card-wrap-grid .popups-container .grid-popup .close-x {
-  background: #fff;
-  border: 1px solid;
+  background: #1C1C1C;
+  color: #CFAE70;
+  border: 1px solid #CFAE70;
 }
 .card-wrap-grid .popups-container .grid-popup .popup-sec {
   width: 40%;
@@ -1109,7 +1110,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   display: none;
 }
 .social-icons li a:hover, .social-icons li a:focus {
-  color: #ffc04d !important;
+  color: #CFAE70 !important;
 }
 
 .footer {
@@ -1136,7 +1137,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
   transition: 0.3s color ease-in-out;
 }
 .footer p a:hover, .footer p a:focus {
-  color: #ffc04d;
+  color: #CFAE70;
 }
 
 @-webkit-keyframes shapeRotate {
@@ -1234,7 +1235,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
 .bg-shape--square {
   width: 250px;
   aspect-ratio: 1/1;
-  border: 20px solid #ffc04d;
+  border: 20px solid #CFAE70;
   border-radius: 10px;
   left: 10%;
   -webkit-animation: shapeRotateAndMove 30s infinite linear;
@@ -1243,7 +1244,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
 .bg-shape--line {
   width: 600px;
   height: 20px;
-  background: #ffc04d;
+  background: #CFAE70;
   animation-direction: reverse;
   -webkit-animation-duration: 51s;
           animation-duration: 51s;
@@ -1253,7 +1254,7 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
 .bg-shape--circle {
   width: 300px;
   aspect-ratio: 1/1;
-  border: 20px solid #ffc04d;
+  border: 20px solid #CFAE70;
   border-radius: 50%;
   top: 20%;
   right: 20%;
