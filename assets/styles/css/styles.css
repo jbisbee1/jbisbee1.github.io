@@ -157,7 +157,7 @@
 .overlay--dark {
   background: rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 590px) {
+@media (hover: none) {
   .overlay {
     background: rgba(0, 0, 0, 0.7);
   }
@@ -972,9 +972,9 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
     overflow-y: initial;
   }
 }
-@media only screen and (max-width: 590px) {
+@media (hover: none) and (max-width: 960px) {
   .card-wrap-grid .grid-row {
-    padding: 5em 0;
+    padding: 5em 0 1em;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -983,27 +983,56 @@ body.occupations .header .main-nav li:nth-of-type(6) a::after {
     width: 100%;
     top: 20px;
   }
+  .card-wrap-grid .grid-row .row-category p {
+    display: inline-block;
+  }
+  .card-wrap-grid .grid-row .row-category p::after {
+    content: "+";
+    margin-left: 10px;
+    display: inline-block;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.3s -webkit-transform ease;
+    transition: 0.3s -webkit-transform ease;
+    transition: 0.3s transform ease;
+    transition: 0.3s transform ease, 0.3s -webkit-transform ease;
+  }
   .card-wrap-grid .grid-row .grid-button {
-    width: 100%;
+    width: 31%;
     border-radius: 0;
+    display: none;
   }
   .card-wrap-grid .grid-row .grid-button .tooltip {
     display: block;
-    bottom: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
+    bottom: 0;
+    left: 0;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     -webkit-transform: none;
             transform: none;
     -webkit-transition: none;
     transition: none;
-    background: #ffc04d;
-    text-align: center;
-    color: #000;
   }
   .card-wrap-grid .grid-row .grid-button .tooltip::after {
     content: none;
+  }
+  .card-wrap-grid .grid-row.show .row-category p::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .card-wrap-grid .grid-row.show .grid-button {
+    display: block;
+  }
+}
+@media (hover: none) and (max-width: 750px) {
+  .card-wrap-grid .grid-row .grid-button {
+    width: 48%;
+  }
+}
+@media (hover: none) and (max-width: 590px) {
+  .card-wrap-grid .grid-row .grid-button {
+    width: 100%;
   }
 }
 
