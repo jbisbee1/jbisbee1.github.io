@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Bisbee Mindmap CV</title>
+    <title>Interactive SVG Fit to Window</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-        }
-
-        #svg-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            width: 100%;
+            overflow: hidden;
         }
 
-        #svg-container embed {
-            max-width: 100%;
-            max-height: 100%;
+        #svg-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #svg-object {
+            width: 100%;
+            height: 100%;
+        }
+
+        #svg-object svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <div style="background-color:#F2F3F5;">
-        <embed src="assets/img/jb_visual_cv_mindmap.svg" type="image/svg+xml" height="100%";>
+    <div id="svg-container" style="background-color:#F2F3F5;">
+        <object id="svg-object" type="image/svg+xml" data="assets/img/jb_visual_cv_mindmap.svg">
+            Your browser does not support SVG
+        </object>
     </div>
 </body>
 </html>
