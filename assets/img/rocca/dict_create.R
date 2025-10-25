@@ -1,5 +1,5 @@
 require(tidyverse)
-
+setwd('D:/Dropbox/personal/Professional/Webpage/chuckles/jbisbee1.github.io/assets/img/rocca')
 imgs <- list.files(pattern = 'jpg')
 
 dict <- NULL
