@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'You're a left-wing hack!' Karoline Leavitt rips journalist over 'biased' ICE claims | Blaze Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d2d2d;
+            background-color: #ebe3d5;
+        }
+
+        .top-bar {
+            background-color: #ebe3d5;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #d4cec0;
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-bar-right {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #c8281e;
+            cursor: pointer;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 30px 20px 40px;
+        }
+
+        .logo {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            color: #000;
+            font-family: Arial, sans-serif;
+            letter-spacing: -2px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            font-size: 12px;
+            font-weight: 700;
+            color: #c8281e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .headline {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .byline {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .subhead {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .article-body {
+            font-size: 18px;
+            line-height: 1.75;
+            color: #2d2d2d;
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+        }
+
+        .article-body .dropcap::first-letter {
+            float: left;
+            font-size: 72px;
+            line-height: 60px;
+            padding-right: 10px;
+            margin-top: 5px;
+            font-weight: 900;
+            color: #000;
+        }
+
+        .pull-quote {
+            background-color: #ebe3d5;
+            border-top: 3px solid #c8281e;
+            border-bottom: 3px solid #c8281e;
+            padding: 25px 0;
+            margin: 30px 0;
+            font-size: 28px;
+            font-weight: 700;
+            color: #c8281e;
+            line-height: 1.3;
+        }
+
+        .tweet-embed {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            background-color: #fff;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .tweet-author-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tweet-author {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .tweet-verified {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #1d9bf0;
+            border-radius: 50%;
+        }
+
+        .tweet-handle {
+            font-size: 15px;
+            color: #666;
+        }
+
+        .tweet-x-logo {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .tweet-body {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 12px;
+        }
+
+        .tweet-timestamp {
+            font-size: 15px;
+            color: #666;
+            margin-top: 12px;
+        }
+
+        .related-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #c8281e;
+        }
+
+        .related-header {
+            font-size: 14px;
+            font-weight: 700;
+            color: #c8281e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .related-link {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: underline;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .author-bio {
+            background-color: #fff;
+            border: 2px solid #c8281e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .author-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #c8281e;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .author-description {
+            font-size: 14px;
+            color: #2d2d2d;
+            margin-bottom: 8px;
+        }
+
+        .author-handle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .newsletter-cta {
+            background-color: #ebe3d5;
+            border: 2px solid #c8281e;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .newsletter-cta-text {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .newsletter-cta-link {
+            color: #c8281e;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .disclosure {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #d4cec0;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .footer {
+            background-color: #1a1a1a;
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+
+        .footer-logo-text {
+            font-size: 80px;
+            font-weight: 900;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 28px;
+            }
+
+            .article-body {
+                font-size: 17px;
+            }
+
+            .article-body .dropcap::first-letter {
+                font-size: 56px;
+                line-height: 48px;
+            }
+
+            .pull-quote {
+                font-size: 22px;
+            }
+
+            .logo-text {
+                font-size: 48px;
+            }
+
+            .footer-logo-text {
+                font-size: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 24px;
+            }
+
+            .logo-text {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span>SIGN IN</span>
+            <span>SUBSCRIBE</span>
+        </div>
+        <div class="top-bar-right">
+            MENU
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <div class="logo-text">Blaze media</div>
+    </div>
+
+    <article class="article-container">
+        <div class="hero-image">
+            <img src="https://www.theblaze.com/media-library/image.jpg?id=62815426" alt="White House press secretary at podium">
+        </div>
+        <div class="image-caption">Stefanie Shan/Bloomberg via Getty Images</div>
+
+        <div class="category">POLITICS</div>
+
+        <h1 class="headline">'You're a left-wing hack!' Karoline Leavitt rips journalist over 'biased' ICE claims</h1>
+
+        <div class="byline">REBEKA ZELJKO</div>
+        <div class="date">JANUARY 15, 2026</div>
+
+        <div class="subhead">'Shame on people like you.'</div>
+
+        <div class="article-body">
+            <p class="dropcap">White House press secretary Karoline Leavitt torched a "left-wing" reporter who challenged the administration's defense of Immigration and Customs Enforcement.</p>
+
+            <p>Niall Stanage, a White House columnist for The Hill, asked Leavitt to defend Secretary of Homeland Security Kristi Noem's remarks claiming ICE is "doing everything correctly." Stanage pointed to the shooting of Renee Good that has engulfed the media, as well as deaths and alleged improper detainments over the last year.</p>
+
+            <div class="pull-quote">
+                'You should be reporting on the facts.'
+            </div>
+
+            <p>"Secretary Noem spoke to the media and she said, among other things, that they are doing everything correctly," Stanage said. "32 people died in ICE custody last year, 170 U.S. citizens were detained by ICE, and Renee Good was shot in the head and killed by an ICE agent. How does that equate to them doing everything correctly?"</p>
+
+            <p>"Why was Renee Good unfortunately and tragically killed?" Leavitt returned.</p>
+
+            <div class="related-section">
+                <div class="related-header">RELATED:</div>
+                <a href="#" class="related-link">ICE officer suffered internal bleeding following Renee Good incident: Report</a>
+            </div>
+
+            <div class="tweet-embed">
+                <div class="tweet-header">
+                    <div class="tweet-author-info">
+                        <div>
+                            <div class="tweet-author">The White House <span class="tweet-verified"></span></div>
+                            <div class="tweet-handle">@WhiteHouse · Follow</div>
+                        </div>
+                    </div>
+                    <div class="tweet-x-logo">𝕏</div>
+                </div>
+                <div class="tweet-body">
+                    🔥STRAIGHT FIRE FROM @PressSec:<br><br>
+                    "You're a left-wing hack. You're not a reporter. You're posing in this room as a journalist… You and the people in the media who have such biases but fake like you're a journalist — you shouldn't even be sitting in that seat."
+                </div>
+                <div class="tweet-timestamp">1:11 PM · Jan 15, 2026</div>
+            </div>
+
+            <p>Leavitt sparred with Stanage, noting that he intentionally withheld figures that outline successful deportations of illegal aliens and the removal of violent criminals from America.</p>
+
+            <p>"Because an ICE agent acted recklessly," Stanage replied.</p>
+
+            <p>"Oh, I see. So it's a reporter with a left-wing opinion," Leavitt said.</p>
+
+            <p>"You're a left-wing hack. You're not a reporter. You're posing in this room as a journalist. And the reality is, you may question me, but you're a left-wing activist. You and the people in the media who have such biases but fake like you're a journalist — you shouldn't even be sitting in that seat. But you're pretending like you're a journalist, but you're a left-wing activist, and the question that you just raised and the comments that you just made are biased and they are bias. You should be reporting on the facts."</p>
+
+            <p>Leavitt grilled Stanage for failing to name the innocent Americans who were killed by illegal aliens, doubling down and defending ICE's role in deporting violent criminals.</p>
+
+            <p>"Do you have the numbers of how many American citizens were killed at the hands of illegal aliens who ICE is trying to remove from this country? I bet you don't," Leavitt said. "I bet you didn't even read up on those stories. I bet you never even read about Laken Riley or Jocelyn Nungaray or all of the innocent Americans who were killed at the hands of illegal aliens in this country."</p>
+
+            <p>"The brave men and women of ICE are doing everything in their power to remove those heinous individuals and make our communities safer. And shame on people like you in the media who have a crooked view and have a biased view and pretend like you're a real honest journalist."</p>
+
+            <div class="author-bio">
+                <div class="author-name">REBEKA ZELJKO</div>
+                <div class="author-description">Rebeka Zeljko is a Capitol Hill and politics reporter for Blaze News.</div>
+                <div class="author-handle">@rebekazeljko →</div>
+            </div>
+
+            <div class="newsletter-cta">
+                <div class="newsletter-cta-text">
+                    <em>Like Blaze News? Bypass the censors, sign up for our newsletters, and get stories like this direct to your inbox.</em> <a href="#" class="newsletter-cta-link">Sign up here!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclosure">
+            This page is a research stimulus created for academic study purposes. It is not an actual news article and is used solely for scholarly research.
+        </div>
+    </article>
+
+    <div class="footer">
+        <div class="footer-logo-text">Blaze media</div>
+    </div>
+</body>
+</html>
