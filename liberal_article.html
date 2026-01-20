@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Federal Agent Shot Another Person in Minneapolis. Then Trump Threatened the Insurrection Act.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+        }
+
+        .header {
+            padding: 20px 20px 10px 20px;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 42px;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+
+        .mojo-wire-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .mojo-wire-title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: #000;
+            line-height: 1;
+            margin-bottom: 8px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .mojo-wire-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background-color: #ff6a00;
+        }
+
+        .mojo-wire-tagline {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 16px;
+            color: #000;
+            margin-top: 12px;
+        }
+
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        .article-meta-top {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        .headline {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 18px;
+            color: #000;
+        }
+
+        .subhead {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .byline {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 13px;
+            color: #000;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .article-body {
+            font-size: 18px;
+            line-height: 1.75;
+            color: #000;
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+        }
+
+        .article-body strong {
+            font-weight: 700;
+        }
+
+        .video-embed {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .video-embed-title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .video-embed-source {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background-color: #e60000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid #fff;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+
+        .tweet-embed {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            background-color: #fff;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .tweet-author {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .tweet-handle {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .tweet-verified {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #1d9bf0;
+            border-radius: 50%;
+            margin-left: 4px;
+            position: relative;
+            top: 3px;
+        }
+
+        .tweet-x-logo {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .tweet-body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #000;
+            margin-bottom: 12px;
+        }
+
+        .tweet-link-preview {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+            background-color: #f7f7f7;
+        }
+
+        .tweet-link-url {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .tweet-link-title {
+            font-size: 15px;
+            color: #000;
+            font-weight: 600;
+            margin: 4px 0;
+        }
+
+        .tweet-link-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .tweet-timestamp {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .tweet-stats {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            color: #000;
+            display: flex;
+            gap: 20px;
+        }
+
+        .disclosure {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 32px;
+            }
+
+            .mojo-wire-title {
+                font-size: 48px;
+            }
+
+            .mojo-wire-tagline {
+                font-size: 14px;
+            }
+
+            .headline {
+                font-size: 32px;
+            }
+
+            .subhead {
+                font-size: 16px;
+            }
+
+            .article-body {
+                font-size: 17px;
+            }
+
+            .video-placeholder {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 28px;
+            }
+
+            .mojo-wire-title {
+                font-size: 36px;
+            }
+
+            .headline {
+                font-size: 26px;
+            }
+
+            .header {
+                padding: 15px 15px 10px 15px;
+            }
+
+            .article-container {
+                padding: 0 15px 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Mother Jones</div>
+    </div>
+
+    <div class="mojo-wire-header">
+        <div class="mojo-wire-title">MOJO WIRE</div>
+        <div class="mojo-wire-tagline">Quick hits from the Mother Jones newsroom</div>
+    </div>
+
+    <article class="article-container">
+        <div class="article-meta-top">MOJO WIRE &nbsp;&nbsp;&nbsp; JANUARY 15, 2026</div>
+
+        <h1 class="headline">A Federal Agent Shot Another Person in Minneapolis. Then Trump Threatened the Insurrection Act.</h1>
+
+        <div class="subhead">Gov. Tim Walz said the federal government is waging "a campaign of organized brutality against the people of Minnesota."</div>
+
+        <div class="byline">Katie Herchenroeder</div>
+
+        <div class="hero-image">
+            <img src="https://www.motherjones.com/wp-content/uploads/2026/01/1152026_ICE_MN_2000.jpg" alt="Federal agents stand guard in Minneapolis">
+        </div>
+        <div class="image-caption">Federal agents stand guard as demonstrators and community members gather near the scene where federal agents shot a man during an immigration raid in Minneapolis on Wednesday. <strong>Jim Vondruska/NurPhoto/AP</strong></div>
+
+        <div class="article-body">
+            <p><strong>The Trump administration's</strong> offensive against immigrants in Minneapolis—and those who seek to help them—continued to intensify Wednesday night and into Thursday after a federal agent shot another person during an immigration operation.</p>
+
+            <p>President Donald Trump, in a Thursday morning Truth social post, threatened to invoke the Insurrection Act—a centuries-old law that allows the president to deploy the US military domestically.</p>
+
+            <p>The move comes after another chaotic night in Minneapolis during which a federal agent shot a man in the leg, according to the Department of Homeland Security. The City of Minneapolis said that the man was taken to the hospital with a non-life threatening injury.</p>
+
+            <p>According to DHS, the man was a Venezuelan national who was a target in an immigration operation. The federal agency claimed in a statement on X that officers were assaulted on the scene prior to the shooting and that an agent was also taken to the hospital.</p>
+
+            <p>This latest shooting by a federal agent comes just one week after ICE agent Jonathan Ross shot and killed Renée Nicole Good in her car.</p>
+
+            <p>In a post commenting on initial reports of the shooting, US Deputy Attorney General Todd Blanche said Wednesday evening that there was a "Minnesota insurrection" happening. Blanche, who used to be Trump's personal attorney, accused Minneapolis Mayor Jacob Frey and Minnesota Gov. Tim Walz of "encouraging violence against law enforcement." Both Frey and Walz have multiple times called for peaceful protests against ICE's actions in the city.</p>
+
+            <p>"Walz and Frey," Blanche wrote, "I'm focused on stopping YOU from your terrorism by whatever means necessary. This is not a threat. It's a promise."</p>
+
+            <p>President Trump threatening to send the military into a US city under the Insurrection Act isn't a new idea for the administration. Back in 2023 in an interview with the <em>New York Times</em>, Stephen Miller, Trump's longtime adviser, said that they were already planning to invoke the law to apprehend immigrants.</p>
+
+            <p>The ongoing situation in Minneapolis has been intensifying for over a month and has only become more acute after the killing of Good. Videos from the frontlines, including many published by <em>Mother Jones</em>, show federal agents violently pulling a woman from her car, repeatedly deploying chemical agents on protesters, and otherwise continuing their offensive against those DHS claims are in the country without legal status—in their home, at school, and at work.</p>
+
+            <p>In a Wednesday night address, Gov. Walz spoke directly to Minnesotans, urging them to continue to record ICE's actions. "If you see these ICE agents in your neighborhood, take out that phone and record. Help us create a database of the atrocities against Minnesotans. Not just to establish a record for posterity, but to bank evidence for future prosecution," he said, once again telling protesters to respond peacefully. "Trump wants this chaos," Walz added. "He wants confusion. And yes, he wants more violence on our streets. We cannot give him what he wants. We can't. We must protest loudly, urgently, but also peacefully."</p>
+
+            <div class="tweet-embed">
+                <div class="tweet-header">
+                    <div>
+                        <span class="tweet-author">Governor Tim Walz</span>
+                        <span class="tweet-verified"></span><br>
+                        <span class="tweet-handle">@GovTimWalz · Follow</span>
+                    </div>
+                    <div class="tweet-x-logo">𝕏</div>
+                </div>
+                <div class="tweet-body">
+                    Watch my address on the ongoing federal presence in Minnesota:
+                </div>
+                <div class="tweet-link-preview">
+                    <div class="tweet-link-url">youtube.com</div>
+                    <div class="tweet-link-title">Governor Walz Addresses Ongoing Federal Presence...</div>
+                    <div class="tweet-link-description">Governor Walz addresses the ongoing federal presence in Minnesota.</div>
+                </div>
+                <div class="tweet-timestamp">7:34 PM · Jan 14, 2026</div>
+                <div class="tweet-stats">
+                    <span>❤️ 5.6K</span>
+                    <span>💬 Reply</span>
+                    <span>🔗 Copy link</span>
+                </div>
+            </div>
+
+            <p>"This long ago stopped being a matter of immigration enforcement, instead, it's a campaign of organized brutality against the people of Minnesota by the federal government," Walz said, telling Trump and DHS Secretary Kristi Noem to "end this occupation."</p>
+        </div>
+
+        <div class="disclosure">
+            This page is a research stimulus created for academic study purposes. It is not an actual news article and is used solely for scholarly research.
+        </div>
+    </article>
+</body>
+</html>
