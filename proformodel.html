@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof or Model? - Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .question {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 4px;
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #444;
+        }
+        .options {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .options label {
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .options input[type="radio"] {
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prof or Model? - Quiz</h1>
+    <p class="tagline">Think you can tell the difference? Think again.</p>
+
+    <form id="quizForm">
+        <div class="question">
+            <h3>Question 1</h3>
+            <img src="abhit_bandari.jpg" alt="Person 1" width="400">
+            <div class="options">
+                <label><input type="radio" name="q1" value="prof"> Prof</label>
+                <label><input type="radio" name="q1" value="model"> Model</label>
+            </div>
+        </div>
+        <hr>
+
+        <div class="question">
+            <h3>Question 2</h3>
+            <img src="noam_lupu.jpg" alt="Person 2" width="400">
+            <div class="options">
+                <label><input type="radio" name="q2" value="prof"> Prof</label>
+                <label><input type="radio" name="q2" value="model"> Model</label>
+            </div>
+        </div>
+        <hr>
+
+        <div class="question">
+            <h3>Question 3</h3>
+            <img src="jim_bisbee.jpg" alt="Person 3" width="400">
+            <div class="options">
+                <label><input type="radio" name="q3" value="prof"> Prof</label>
+                <label><input type="radio" name="q3" value="model"> Model</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="calcScore()">Submit Quiz</button>
+    </form>
+
+    <div class="footer">
+        <p>Academic chic or runway ready? You decide.</p>
+    </div>
+
+    <script>
+        function calcScore() {
+            // Define correct answers
+            const answers = {
+                q1: 'prof',    // Abhit Bandari
+                q2: 'prof',    // Noam Lupu
+                q3: 'model'    // Jim Bisbee
+            };
+
+            let score = 0;
+            let unanswered = [];
+
+            // Check each answer
+            for (let i = 1; i <= 3; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!selected) {
+                    unanswered.push(i);
+                } else if (selected.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            // Alert if there are unanswered questions
+            if (unanswered.length > 0) {
+                alert(`Please answer all questions! You missed question(s): ${unanswered.join(', ')}`);
+                return;
+            }
+
+            // Show score and redirect to solutions
+            alert(`You got ${score} out of 3 correct!`);
+            window.location.href = 'proformodel_solutions.html';
+        }
+    </script>
+</body>
+</html>
